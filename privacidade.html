@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Política de Privacidade — rclone OperacaoLogistica</title>
+<style>
+  :root { --texto: #1f2933; --suave: #52606d; --fundo: #ffffff; --linha: #d9e2ec; --link: #0b5cad; }
+  @media (prefers-color-scheme: dark) {
+    :root { --texto: #e4e7eb; --suave: #9aa5b1; --fundo: #12161b; --linha: #323f4b; --link: #7cb7ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  .sub { color: var(--suave); margin: 0 0 24px; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  code { font-size: .92em; overflow-wrap: anywhere; }
+  footer { border-top: 1px solid var(--linha); margin-top: 36px; padding-top: 16px; color: var(--suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade</h1>
+  <p class="sub">rclone OperacaoLogistica · vigente a partir de 13/10/2026</p>
+
+  <h2>1. A quem se aplica</h2>
+  <p>Este aplicativo OAuth é usado exclusivamente pelo responsável pela Operação Logística, em sua própria conta
+     Google, para a rotina de cópia de segurança descrita na <a href="index.html">página inicial</a>. Não há outros
+     usuários, cadastro ou oferta ao público.</p>
+
+  <h2>2. Dados do Google acessados</h2>
+  <ul>
+    <li>A autorização solicita o escopo <code>https://www.googleapis.com/auth/drive</code>, que permite ver, criar,
+        alterar e excluir arquivos no Google Drive da conta autorizada.</li>
+    <li>A rotina de backup é configurada para usar apenas a pasta e os arquivos destinados aos backups: listar,
+        enviar, conferir e baixar esses arquivos. O Google não restringe tecnicamente o acesso a essa pasta; a
+        limitação decorre da configuração da rotina.</li>
+    <li>Nenhum outro serviço do Google (como Gmail, Contatos ou Agenda) é acessado.</li>
+  </ul>
+
+  <h2>3. Como os dados são usados</h2>
+  <ul>
+    <li>Os arquivos de backup são criptografados no computador do responsável antes do envio. No Google Drive, o
+        conteúdo e os nomes desses arquivos ficam criptografados.</li>
+    <li>Os dados do Google Drive são usados somente para guardar e recuperar esses backups.</li>
+    <li>O uso de informações recebidas das APIs do Google segue a
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de Dados do
+        Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</li>
+  </ul>
+
+  <h2>4. Onde ficam as credenciais</h2>
+  <p>As credenciais de acesso emitidas pelo Google ficam somente no computador do responsável, em arquivo de
+     configuração criptografado. O rclone se comunica diretamente com as APIs do Google; não existe servidor
+     intermediário deste aplicativo.</p>
+
+  <h2>5. Compartilhamento</h2>
+  <p>Os dados obtidos do Google Drive não são vendidos, compartilhados ou transferidos a terceiros e não são usados
+     para publicidade.</p>
+
+  <h2>6. Revogação e exclusão</h2>
+  <ul>
+    <li>O acesso pode ser revogado a qualquer momento em
+        <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</li>
+    <li>Os arquivos de backup podem ser apagados pelo titular diretamente no Google Drive.</li>
+  </ul>
+
+  <h2>7. Este site</h2>
+  <p>Estas páginas não usam cookies, rastreadores, anúncios nem scripts. Elas são hospedadas pelo GitHub Pages, que
+     pode registrar dados técnicos de acesso conforme a
+     <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">declaração de privacidade do GitHub</a>.</p>
+
+  <h2>8. Alterações e contato</h2>
+  <p>Alterações nesta política serão publicadas nesta página, com nova data de vigência. Contato:
+     <a href="https://github.com/PauloCavalcantiBrandao" rel="noopener">perfil do responsável no GitHub</a>.</p>
+
+  <footer>
+    <p><a href="index.html">Página inicial</a></p>
+  </footer>
+</main>
+</body>
+</html>

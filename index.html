@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>rclone OperacaoLogistica</title>
+<style>
+  :root { --texto: #1f2933; --suave: #52606d; --fundo: #ffffff; --linha: #d9e2ec; --link: #0b5cad; }
+  @media (prefers-color-scheme: dark) {
+    :root { --texto: #e4e7eb; --suave: #9aa5b1; --fundo: #12161b; --linha: #323f4b; --link: #7cb7ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  p, li { color: var(--texto); }
+  .sub { color: var(--suave); margin: 0 0 24px; }
+  a { color: var(--link); }
+  footer { border-top: 1px solid var(--linha); margin-top: 36px; padding-top: 16px; color: var(--suave); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>rclone OperacaoLogistica</h1>
+  <p class="sub">Cópia de segurança criptografada de uso interno no Google Drive</p>
+
+  <h2>O que é</h2>
+  <p>“rclone OperacaoLogistica” é a identificação de um aplicativo OAuth do Google usada pelo
+     <a href="https://rclone.org/" rel="noopener">rclone</a>, um programa de código aberto para transferência de
+     arquivos, na rotina de cópia de segurança da Operação Logística.</p>
+  <p>É de uso interno: é utilizado apenas pelo responsável pela Operação Logística, na própria conta Google dele.
+     Não é oferecido ao público, não possui cadastro de usuários e não é um serviço comercial.</p>
+
+  <h2>Para que serve</h2>
+  <ul>
+    <li><strong>Backup:</strong> arquivos de backup gerados no computador do responsável são criptografados nesse
+        mesmo computador e só então enviados ao Google Drive da conta dele.</li>
+    <li><strong>Recuperação:</strong> quando necessário, os arquivos são baixados desse Google Drive e
+        descriptografados localmente.</li>
+  </ul>
+
+  <h2>Acesso ao Google Drive</h2>
+  <p>A autorização concedida no Google dá ao aplicativo acesso de leitura e gravação ao Google Drive da conta.
+     A rotina de backup é configurada para usar apenas a pasta e os arquivos destinados aos backups. Essa limitação
+     vem da configuração da rotina, não de uma restrição técnica imposta pelo Google.</p>
+  <p>Detalhes sobre o tratamento dos dados estão na <a href="privacidade.html">Política de Privacidade</a>.</p>
+
+  <footer>
+    <p><a href="privacidade.html">Política de Privacidade</a> ·
+       Contato: <a href="https://github.com/PauloCavalcantiBrandao" rel="noopener">perfil do responsável no GitHub</a></p>
+  </footer>
+</main>
+</body>
+</html>
